@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Rio</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="shortcut icon" href="./img/white_ribbons-removebg-preview.png" type="image/x-icon" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+ <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="bg-gray-100">
+ <!-- Notification Bar -->
+ <div class="bg-blue-600 text-white text-center py-1">
+  Accepting 4 new clients. <strong>Get started now.</strong>
+ </div>
+
+ <!-- Navigation -->
+ <nav class="flex justify-between items-center bg-white shadow-md">
+  <div class="flex items-center">
+   <img
+    src="./img/rio-letter-logo-design-on-white-background-rio-creative-circle-letter-logo-concept-rio-letter-design-vector.jpg"
+    alt="" class="w-40 px-6">
+   <!-- <span class="text-xl font-bold">Rio</span> -->
+  </div>
+  <div class="hidden md:flex space-x-6">
+   <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+   <a href="#" class="text-gray-700 hover:text-blue-600">About us</a>
+   <a href="#" class="text-gray-700 hover:text-blue-600">Blog</a>
+  </div>
+  <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-full">Get Started</a>
+ </nav>
+
+ <!-- Hero Section -->
+ <header class="text-center py-40 px-11 bg-white fade-in">
+  <h1 class="text-4xl md:text-6xl font-bold text-gray-900">Save time & <span class="text-blue-600">work smarter</span>
+   with AI Automation</h1>
+  <p class="mt-4 text-gray-600 text-lg">We help you automate workflows, automate repetitive tasks, and elevate your
+   business.</p>
+  <a href="#" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-full text-lg">Book Your Free Audit
+   Call</a>
+  <div class="mt-6 flex items-center justify-center space-x-2">
+   <img src="./img/hCsV8dkBKP9VEaaIlJr8Bk89bX4.avif" class="w-10 h-10 rounded-full">
+   <img src="./img/JhbGle453RWF0QjzZnSxbtxRBiA.avif" class="w-10 h-10 rounded-full">
+   <img src="./img/sFJggTzla8eMLg8n1AbKDQlyulU.avif" class="w-10 h-10 rounded-full">
+   <p class="text-gray-700">200+ happy clients! Join them now →</p>
+  </div>
+ </header>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script>
+  $(document).ready(function () {
+   $(".fade-in").each(function (i) {
+    setTimeout(() => {
+     $(this).addClass("visible");
+    }, i * 300);
+   });
+  });
+ </script>
+
+ <!-- youtube -->
+
+ <div class="container">
+  <div class="youtube-section">
+   <iframe class="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] mx-auto" width="560" height="315"
+    src="https://www.youtube.com/embed/QbFT7EnofZw?si=zN6XGtnKMHhGLKVB" title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+ </div>
+
+ <!-- logo_slider -->
+
+ <style>
+  .fade-in {
+   opacity: 0;
+   transform: translateY(20px);
+   transition: opacity 0.6s ease-out;
+   transform: 0.6s ease-out;
+  }
+
+  .fade-in.visible {
+   opacity: 1;
+   transform: translateY(0);
+  }
+
+  body {
+   font-family: Arial, sans-serif;
+   /* display: flex; */
+   /* justify-content: center; */
+   /* align-items: center; */
+   height: 100vh;
+   background-color: #f8f8f8;
+   margin: 0;
+  }
+
+  .logo-container {
+   width: 100%;
+   overflow: hidden;
+   white-space: nowrap;
+   position: relative;
+   background: white;
+   padding: 20px 0;
+  }
+
+  .logo-slider {
+   display: flex;
+   gap: 40px;
+   animation: slide 20s linear infinite;
+  }
+
+  .logo-slider img {
+   height: 50px;
+   filter: grayscale(100%);
+  }
+
+  @keyframes slide {
+   from {
+    transform: translateX(100%);
+   }
+
+   to {
+    transform: translateX(-100%);
+   }
+  }
+ </style>
+ <div class="logo-container">
+  <div class="logo-slider">
+   <img src="./imglogo/download.png" alt="Logo 1">
+   <img src="./img/Screenshot_8.png" alt="Logo 2">
+   <img src="./imglogo/Screenshot_11.png" alt="Logo 3">
+   <img src="./imglogo/Screenshot_12.png" alt="Logo 4">
+   <img src="./imglogo/Screenshot_13.png" alt="Logo 5">
+   <img src="./imglogo/Screenshot_14.png" alt="Logo 1">
+   <img src="./imglogo/Screenshot_15.png" alt="Logo 2">
+   <img src="./imglogo/Screenshot_2.png" alt="Logo 3">
+   <img src="./imglogo/Screenshot_3.png" alt="Logo 4">
+   <img src="./imglogo/Screenshot_4.png" alt="Logo 5">
+   <img src="./imglogo/Screenshot_5.png" alt="Logo 1">
+  </div>
+ </div>
+
+ <!-- services -->
+
+ <section class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="text-center">
+   <p class="text-sm text-blue-500 font-semibold">SERVICES</p>
+   <h1 class="text-3xl font-bold text-gray-900">
+    <span class="text-blue-600">AI-powered</span> automation services
+   </h1>
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+    <div class="bg-white p-6 rounded-xl shadow-md">
+     <span class="text-blue-500 text-2xl">💬</span>
+     <h2 class="font-semibold text-lg mt-2">Customer Support Chatbots</h2>
+     <p class="text-gray-600 text-sm">Streamline operations and enhance productivity with AI-driven automation.</p>
+     <a href="#" class="text-blue-600 text-sm mt-3 inline-block">Learn more →</a>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow-md">
+     <span class="text-blue-500 text-2xl">⚙️</span>
+     <h2 class="font-semibold text-lg mt-2">Workflow Automations</h2>
+     <p class="text-gray-600 text-sm">Cut down on manual labor costs through efficient and precise automated processes.
+     </p>
+     <a href="#" class="text-blue-600 text-sm mt-3 inline-block">Learn more →</a>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow-md">
+     <span class="text-blue-500 text-2xl">🖥️</span>
+     <h2 class="font-semibold text-lg mt-2">Chatbots for Internal Use</h2>
+     <p class="text-gray-600 text-sm">Automate tasks to ensure your business operates seamlessly around the clock.</p>
+     <a href="#" class="text-blue-600 text-sm mt-3 inline-block">Learn more →</a>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow-md">
+     <span class="text-blue-500 text-2xl">📊</span>
+     <h2 class="font-semibold text-lg mt-2">Custom GPTs</h2>
+     <p class="text-gray-600 text-sm">Harness the power of AI for in-depth analytics and informed decision-making.</p>
+     <a href="#" class="text-blue-600 text-sm mt-3 inline-block">Learn more →</a>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- content block -->
+
+ <section class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+   <div>
+    <p class="text-sm text-blue-500 font-semibold">CONTENT BLOCK</p>
+    <h1 class="text-4xl font-bold text-gray-900 mt-2">
+     Workflows with our AI automation <span class="text-blue-600">expertise</span>
+    </h1>
+    <p class="text-gray-600 mt-4">Revolutionize tasks, reduce errors, and boost efficiency with intelligent technology,
+     streamlining operations for unparalleled productivity.</p>
+    <ul class="mt-4 space-y-2">
+     <li class="flex items-center"><span class="text-green-500 text-lg mr-2">✔</span> Functional sections</li>
+     <li class="flex items-center"><span class="text-green-500 text-lg mr-2">✔</span> Easy to customize</li>
+    </ul>
+    <a href="#"
+     class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">Book
+     Your Free Audit Call</a>
+   </div>
+   <div class="relative">
+    <div class="bg-white p-4 rounded-lg shadow-lg relative z-10">
+     <img src="./img/7645ade6-2132-4229-8838-61a9360613bd.png" alt="Graph" class="rounded-lg">
+    </div>
+   </div>
+ </section>
+
+ <!-- content block 2 -->
+
+
+ <section class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+   <div class="relative">
+    <div class="bg-white p-6 rounded-full shadow-lg relative z-10">
+     <img src="./img/download.png" alt="AI Graphic" class="rounded-full">
+    </div>
+   </div>
+   <div>
+    <p class="text-sm text-blue-500 font-semibold">CONTENT BLOCK</p>
+    <h1 class="text-4xl font-bold text-gray-900 mt-2">
+     Harnessing AI for business success
+    </h1>
+    <div class="mt-4 space-y-4">
+     <button onclick="toggleContent('content1')"
+      class="flex items-center justify-between w-full bg-white p-4 rounded-lg shadow-md">
+      <span class="flex items-center"><span class="text-blue-500 text-lg mr-2">📋</span> Boost efficiency and cut costs
+       with AI-powered automation</span>
+      <span class="text-gray-500">➜</span>
+     </button>
+     <p id="content1" class="hidden text-gray-600 text-sm p-4 bg-gray-200 rounded-lg">AI helps automate repetitive
+      tasks,
+      reducing costs and improving efficiency.</p>
+
+     <button onclick="toggleContent('content2')"
+      class="flex items-center justify-between w-full bg-white p-4 rounded-lg shadow-md">
+      <span class="flex items-center"><span class="text-blue-500 text-lg mr-2">📊</span> Optimize operations, minimize
+       errors, and save resources</span>
+      <span class="text-gray-500">➜</span>
+     </button>
+     <p id="content2" class="hidden text-gray-600 text-sm p-4 bg-gray-200 rounded-lg">AI-powered analytics help
+      businesses make data-driven decisions efficiently.</p>
+    </div>
+    <blockquote class="mt-6 text-gray-600 italic">“Couldn’t be happier with the work the guys from XYZ Agency did for
+     us.
+     Made sales 10x more efficient.”</blockquote>
+    <div class="mt-4 flex items-center">
+     <img src="./img/G3MEsoXQjALKfj8Ya1mIWgFMuc.avif" alt="User" width="30" class="rounded-full mr-3">
+     <div>
+      <p class="font-semibold">William James</p>
+      <p class="text-gray-500 text-sm">CEO, XYZ</p>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <script>
+   function toggleContent(id) {
+    var content = document.getElementById(id);
+    if (content.classList.contains('hidden')) {
+     content.classList.remove('hidden');
+    } else {
+     content.classList.add('hidden');
+    }
+   }
+  </script>
+ </section>
+
+ <!-- Leading the way in AI automation -->
+ <style>
+  .slider-container {
+   overflow: hidden;
+   white-space: nowrap;
+   position: relative;
+   width: 100%;
+  }
+
+  .slider {
+   display: flex;
+   width: max-content;
+   animation: slide 15s linear infinite;
+  }
+
+  .slide {
+   flex: 0 0 auto;
+   width: 320px;
+   margin-right: 16px;
+   display: inline-block;
+   white-space: normal;
+   vertical-align: top;
+   overflow: hidden;
+  }
+
+  .slide p {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   /* -webkit-line-clamp: 3; */
+   -webkit-box-orient: vertical;
+  }
+
+  @keyframes slide {
+   from {
+    transform: translateX(100%);
+   }
+
+   to {
+    transform: translateX(-100%);
+   }
+  }
+ </style>
+ <section class="bg-gray-100 flex justify-center items-center min-h-screen">
+  <div class="w-full max-w-5xl px-4">
+   <h2 class="text-center text-3xl font-bold mb-6">Leading the way in AI automation</h2>
+   <div class="slider-container">
+    <div class="slider">
+     <div class="bg-white p-6 rounded-lg shadow-md slide">
+      <img class="w-12 h-12 rounded-full mb-3" src="./img/sFJggTzla8eMLg8n1AbKDQlyulU.avif" alt="Client 1">
+      <h3 class="text-lg font-semibold">Jane Lewis</h3>
+      <p class="text-gray-500">Marketing Director @ ABC</p>
+      <p class="mt-2 text-gray-700">"We've tried countless agencies but this has been the best experience by far..."</p>
+      <p class="text-yellow-500 mt-2">★★★★★</p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md slide">
+      <img class="w-12 h-12 rounded-full mb-3" src="./img/LsJGvkbYbF1y4ifkFrjeNfRfzYM.avif" alt="Client 2">
+      <h3 class="text-lg font-semibold">Alex James</h3>
+      <p class="text-gray-500">Marketing Director @ ABC</p>
+      <p class="mt-2 text-gray-700">"We approached Wize for an internal chatbot that’s trained on all of our sales data,
+       and the results are amazing!"</p>
+      <p class="text-yellow-500 mt-2">★★★★★</p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md slide">
+      <img class="w-12 h-12 rounded-full mb-3" src="./img/0OjdTxpLdqgvqtgZDfcw2aJjgOU.avif" alt="Client 3">
+      <h3 class="text-lg font-semibold">James Williams</h3>
+      <p class="text-gray-500">Marketing Director @ ABC</p>
+      <p class="mt-2 text-gray-700">"Our chatbot has taken over more than 60% of our support tickets, and customers are
+       not even noticing they are talking to AI!"</p>
+      <p class="text-yellow-500 mt-2">★★★★★</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- PROCESS -->
+
+ <section class="sticky bg-gray-100">
+  <div class="sticky container mx-auto px-6 py-12 flex flex-col md:flex-row gap-10">
+
+   <!-- Left Section (Fixed) -->
+   <div class="sticky md:w-1/3 h-screen top-0 flex flex-col justify-start">
+    <span class="bg-blue-200 text-blue-700 px-3 py-1 rounded-full text-sm">PROCESS</span>
+    <h2 class="text-3xl font-bold mt-4">How to get started</h2>
+    <p class="mt-2 text-gray-600">Unleash the power of AI automation to transform routine processes, ensuring precision,
+     24/7 availability, and significant cost savings.</p>
+    <button class="mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg">Book Your Free Audit Call</button>
+   </div>
+
+   <!-- Right Section (Scrollable) -->
+   <div class="sticky md:w-2/3 space-y-6 overflow-y-auto">
+    <div class="sticky p-4 bg-white rounded-lg shadow-md">
+     <h3 class="text-blue-600 font-bold">01</h3>
+     <h4 class="font-semibold">Book a discovery call</h4>
+     <p class="text-gray-600">Book your free discovery call by clicking one of the buttons on this page.</p>
+     <a href="#" class="text-blue-600 font-semibold flex items-center">Get Started →</a>
+    </div>
+    <div class="sticky p-4 bg-white rounded-lg shadow-md">
+     <h3 class="text-blue-600 font-bold">02</h3>
+     <h4 class="font-semibold">Get a personal growth strategy</h4>
+     <p class="text-gray-600">On this call, we'll assess your business and start working on your personal growth
+      strategy.</p>
+    </div>
+    <div class="sticky p-4 bg-white rounded-lg shadow-md">
+     <h3 class="text-blue-600 font-bold">03</h3>
+     <h4 class="font-semibold">Onboarding</h4>
+     <p class="text-gray-600">After the strategy is complete, we will onboard you onto our software to ensure a smooth
+      process.</p>
+    </div>
+    <div class="sticky p-4 bg-white rounded-lg shadow-md">
+     <h3 class="text-blue-600 font-bold">04</h3>
+     <h4 class="font-semibold">Implementation & results</h4>
+     <p class="text-gray-600">And finally, we get to implementing the growth strategy and working to see results.</p>
+     <a href="#" class="text-blue-600 font-semibold flex items-center">Get Started →</a>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- Pricing -->
+
+ <section class="bg-gray-50 flex items-center justify-center min-h-screen">
+  <div class="container mx-auto px-4">
+   <!-- Header Section -->
+   <div class="text-center mb-8">
+    <span class="text-blue-500 uppercase text-sm font-bold">Pricing</span>
+    <h1 class="text-3xl font-bold text-gray-800 mt-2">Plans to Fit Your Business</h1>
+    <div class="mt-4 flex justify-center items-center gap-4">
+     <span class="text-gray-600 font-medium">Monthly</span>
+     <label class="relative inline-flex items-center cursor-pointer">
+      <input type="checkbox" value="" class="sr-only peer" id="billingToggle">
+      <div
+       class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-500">
+      </div>
+     </label>
+     <span class="text-gray-600 font-medium">Yearly</span>
+    </div>
+   </div>
+
+   <!-- Pricing Cards -->
+   <div class="grid gap-6 md:grid-cols-3">
+    <!-- Pro Plan -->
+    <div class="bg-white p-6 rounded-lg shadow">
+     <h3 class="text-lg font-bold text-gray-800">Pro</h3>
+     <p class="text-4xl font-bold text-gray-800 mt-4">$<span class="price" data-monthly="199"
+       data-yearly="1990">199</span>/m</p>
+     <p class="text-gray-500 mt-2">Price breakdown here</p>
+     <button class="mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 w-full">Get
+      Started</button>
+     <p class="text-gray-500 text-sm mt-2 text-center">Got questions? <a href="#" class="text-blue-500">Talk to an
+       expert.</a></p>
+     <ul class="mt-4 text-gray-600 space-y-2">
+      <li>✔ Feature here</li>
+      <li>✔ Feature here</li>
+      <li>✔ Feature here</li>
+      <li>✔ Feature here</li>
+     </ul>
+     <div class="mt-6 text-blue-500 font-medium flex justify-between items-center">
+      Optional add-ons <span>+</span>
+     </div>
+    </div>
+
+    <!-- Popular Plan -->
+    <div class="bg-white p-6 rounded-lg shadow border-2 border-blue-500">
+     <h3 class="text-lg font-bold text-gray-800 flex items-center">Pro <span
+       class="ml-2 text-xs bg-blue-100 text-blue-500 px-2 py-1 rounded">Popular</span></h3>
+     <p class="text-4xl font-bold text-gray-800 mt-4">$<span class="price" data-monthly="599"
+       data-yearly="5990">599</span>/m</p>
+     <p class="text-gray-500 mt-2">Price breakdown here</p>
+     <button class="mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 w-full">Get
+      Started</button>
+     <p class="text-gray-500 text-sm mt-2 text-center">Got questions? <a href="#" class="text-blue-500">Talk to an
+       expert.</a></p>
+     <ul class="mt-4 text-gray-600 space-y-2">
+      <li>✔ Feature here</li>
+      <li>✔ Feature here</li>
+      <li>✔ Feature here</li>
+      <li>✔ Feature here</li>
+     </ul>
+     <div class="mt-6 text-blue-500 font-medium flex justify-between items-center">
+      Optional add-ons <span>+</span>
+     </div>
+    </div>
+
+    <!-- Premium Plan -->
+    <div class="bg-white p-6 rounded-lg shadow">
+     <h3 class="text-lg font-bold text-gray-800">Premium</h3>
+     <p class="text-4xl font-bold text-gray-800 mt-4">$<span class="price" data-monthly="499"
+       data-yearly="4990">499</span>/m</p>
+     <p class="text-gray-500 mt-2">Price breakdown here</p>
+     <button class="mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 w-full">Get
+      Started</button>
+     <p class="text-gray-500 text-sm mt-2 text-center">Got questions? <a href="#" class="text-blue-500">Talk to an
+       expert.</a></p>
+     <ul class="mt-4 text-gray-600 space-y-2">
+      <li>✔ Feature here</li>
+      <li>✔ Feature here</li>
+      <li>✔ Feature here</li>
+      <li>✔ Feature here</li>
+     </ul>
+     <div class="mt-6 text-blue-500 font-medium flex justify-between items-center">
+      Optional add-ons <span>+</span>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <script>
+   const toggle = document.getElementById('billingToggle');
+   const prices = document.querySelectorAll('.price');
+
+   toggle.addEventListener('change', () => {
+    const isYearly = toggle.checked;
+    prices.forEach(price => {
+     price.textContent = isYearly ? price.dataset.yearly : price.dataset.monthly;
+    });
+   });
+  </script>
+ </section>
+
+ <!-- FAQ -->
+
+ <section class="bg-gray-100 flex justify-center items-center h-screen">
+  <div class="w-full max-w-2xl bg-white p-6 rounded-lg shadow-lg">
+   <div class="text-center">
+    <span class="bg-blue-200 text-blue-700 px-3 py-1 rounded-full text-sm">FAQ</span>
+    <h2 class="text-2xl font-bold mt-2">You've got questions, we've got <span class="text-blue-600">answers</span></h2>
+   </div>
+
+   <div class="mt-6 space-y-3">
+    <div class="border rounded-lg overflow-hidden">
+     <button class="w-full p-4 text-left font-medium bg-blue-200 text-blue-700 hover:bg-gray-300 flex justify-between"
+      onclick="toggleFAQ(1)">
+      <span>How can I tell if using Al is the right solution for my problem?</span>
+      <span id="icon1">+</span>
+     </button>
+     <div id="faq1" class="hidden p-4 bg-white">Figuring out which process to enhance using Al can be tricky for
+      business people. If you have a business problem where you feel that the solution might be hidden in data and can't
+      be solved with simple rules, Al could be the answer.
+      To define an Al use case, you'll need the help of an Al team, the person who knows the most about the issue (the
+      problem owner), and technical specialists who understand how to deal with the problem in the technical world.
+     </div>
+    </div>
+
+    <div class="border rounded-lg overflow-hidden">
+     <button class="w-full p-4 text-left font-medium bg-blue-200 text-blue-700 flex justify-between"
+      onclick="toggleFAQ(2)">
+      <span>How long does an Al solution take to implement?</span>
+      <span id="icon2">-</span>
+     </button>
+     <div id="faq2" class="hidden p-4 bg-white">
+      Using Al involves a series of steps: collecting data, labeling it, developing and training the model, testing and
+      evaluating it, and finally deploying the solution. At the beginning, data collection and labeling take 20-50% of
+      the time (higher % for smaller or standard projects).
+      The rest of the time is spent on model development, testing, and deployment, which depends on how unique the
+      problem is, the performance level required, and the complexity of deployment. Al projects can last anywhere from 3
+      months to several years, depending on the size and collaboration needed.
+     </div>
+    </div>
+
+    <div class="border rounded-lg overflow-hidden">
+     <button class="w-full p-4 text-left font-medium bg-blue-200 text-blue-700 hover:bg-gray-300 flex justify-between"
+      onclick="toggleFAQ(3)">
+      <span>Will we need to make changes in our teams?</span>
+      <span id="icon3">+</span>
+     </button>
+     <div id="faq3" class="hidden p-4 bg-white">No, you don't have to fire employees. Al and automation are only there
+      to help humans to be able to focus on the most important tasks by automating time-consuming and repetitive tasks.
+      In the long run, process automation will make your teams happier and improves their performance.
+      All you need to do is sit back, let the automation run the repetitive tasks, and focus on strategic tasks that
+      only humans can do. With our experience running Al projects, we know how frustrating it is for company teams to
+      integrate innovative Al & automation solutions into their daily routines.
+      With our approach, we not only implement an automation solution but also help you to realize the "Future of Work"
+      with all the freedom that it brings.
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <script>
+   function toggleFAQ(id) {
+    const answer = document.getElementById(`faq${id}`);
+    const icon = document.getElementById(`icon${id}`);
+    answer.classList.toggle("hidden");
+    icon.textContent = answer.classList.contains("hidden") ? "+" : "-";
+   }
+  </script>
+ </section>
+
+ <!-- Footer Section -->
+ <footer class=" bg-gray-900 text-gray-200 py-12">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center">
+   <div class="text-center md:text-left mb-6 md:mb-0">
+    <h2 class="text-2xl font-bold mb-4">Ready to <span class="text-blue-500">Get Started?</span></h2>
+    <p class="text-gray-400 mb-4">Experience the future of business operations with AI automation.</p>
+    <a href="#" class="bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600 transition">Book Your
+     Free Audit Call</a>
+   </div>
+   <div class="flex items-center space-x-4">
+    <a href="#" class="text-blue-400 bg-blue-800 rounded-md hover:text-gray-200"><img
+      src="./img/facebook-circle-logo-24.png" alt="Facebook" class="h-6"></a>
+    <a href="#" class="text-gray-400 bg-blue-300 rounded-md hover:text-gray-200"><img
+      src="./img/linkedin-square-logo-24.png" alt="LinkedIn" class="h-6"></a>
+    <a href="#" class="text-gray-400 bg-sky-800 rounded-md hover:text-gray-200"><img src="./img/twitter-logo-24.png"
+      alt="Twitter" class="h-6"></a>
+   </div>
+  </div>
+  <div class="mt-8 text-center text-sm text-gray-500">
+   © Mont Limited 2023. All rights reserved. Designed by Wize
+  </div>
+ </footer>
+
+
+</html>
